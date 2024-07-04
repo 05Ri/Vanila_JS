@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+}
+
+.hello {
+    color: darkviolet;
+}
+
+.warning {
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+
+.success {
+    color: blue;
+    transition: color 0.5s ease-in-out;
+}
+
+.font-apply {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
