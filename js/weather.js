@@ -12,9 +12,9 @@ function onGeoOK(position) {
                 const weather = data.weather[0].description;
                 const temperature = data.main.temp;
 
-                weatherContainer.querySelector('span:nth-child(1)').innerText = city;
-                weatherContainer.querySelector('span:nth-child(2)').innerText = weather;
-                weatherContainer.querySelector('span:nth-child(3)').innerText = temperature;
+                weatherContainer.querySelector('span:nth-child(1)').innerText = `${city}`;
+                weatherContainer.querySelector('span:nth-child(2)').innerText = `${weather}`;
+                weatherContainer.querySelector('span:nth-child(3)').innerText = `${temperature}℃`;
     }));
 }
 function onGeoError() {

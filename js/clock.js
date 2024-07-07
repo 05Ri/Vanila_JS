@@ -6,7 +6,7 @@ function tictok() {
     const hour = String(day.getHours()).padStart(2, '0');
     const minute = String(day.getMinutes()).padStart(2, '0');
     const second = String(day.getSeconds()).padStart(2, '0');
-    clock.querySelector('h3').innerText = `${hour}:${minute}:${second}`;
+    clock.querySelector('h5').innerText = `${hour}:${minute}:${second}`;
 }
 
 tictok();

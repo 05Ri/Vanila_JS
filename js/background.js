@@ -1,15 +1,17 @@
-const background = ['background01.jpg', 'background02.jpg', 'background03.jpg'];
+const images = ['background01', 'background02', 'background03'];
 
-const idx = Math.floor(Math.random() * 10) % background.length;
+const idx = Math.floor(Math.random() * images.length);
 
-const chosenImage = background[idx];
+const chosenImage = images[idx];
 
-const showBackGround = document.getElementById('background');
+document.body.style.backgroundImage = `url(img/${chosenImage}.jpg)`;
 
-// showBackGround.innerHTML = `<img src='img/${chosenImage}'></img>`;
-
-const bgImage = document.createElement('img');
-
-bgImage.src = `img/${chosenImage}`;
-
-showBackGround.appendChild(bgImage);
+// const showBackGround = document.getElementById('background');
+//
+// // showBackGround.innerHTML = `<img src='img/${chosenImage}'></img>`;
+//
+// const bgImage = document.createElement('img');
+//
+// bgImage.src = `img/${chosenImage}.jpg`;
+//
+// showBackGround.appendChild(bgImage);

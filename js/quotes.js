@@ -23,4 +23,4 @@ const displayAuthor = document.querySelector('#quote span:nth-child(3)');
 const index = Math.floor(Math.random() * 10) % quotes.length;
 const objQuote = quotes[index];
 displayQuote.innerText = objQuote.quote;
-displayAuthor.innerText = objQuote.author;
+displayAuthor.innerText = `- ${objQuote.author} -`;

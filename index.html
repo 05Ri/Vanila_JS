@@ -8,46 +8,56 @@
 </head>
 
 <body>
-    <div id="clock">
-        <h3>hh:mm:ss</h3>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="https://github.com/05Ri/Vanila_JS">깃헙</a>
+            </div>
+
+            <div>
+                <form id="login-form" class="hidden">
+                    <input required maxlength="15" type="text" id="name" placeholder="이름을 입력하세요" />
+                    <button>OK</button>
+                </form>
+                <form id="hello-user" class="hidden">
+                    <h4 style="display:inline"></h4>
+                    <button>EXIT</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div id="clock">
+                <h5>hh:mm:ss</h5>
+            </div>
+
+            <div id ="weather">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <form id="todo-form">
+                <input required type="text" placeholder="할 일을 작성하세요!" />
+                <button>추가</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </main>
     </div>
 
-    <a href="https://www.naver.com">네이버</a>
-
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" id="name" placeholder="이름을 입력하세요" />
-        <button>OK</button>
-    </form>
-
-    <form id="hello-user" class="hidden">
-        <h1></h1>
-        <button>EXIT</button>
-    </form>
-    
-    <form id="todo-form">
-        <input required type="text" placeholder="할 일을 작성하세요!" />
-        <button>추가</button>
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
-        <span>quote</span>
-        <br />
-        <span>author</span>
-    </div>
-    <div id ="weather">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div id="background"></div>
+    <footer>
+        <div id="quote">
+            <span>quote</span>
+            <br />
+            <span>author</span>
+        </div>
+    </footer>
 </body>
 
+<script src="js/background.js"></script>
 <script src="js/login_out.js"></script>
 <script src="js/clock.js"></script>
 <script src="js/quotes.js"></script>
-<script src="js/background.js"></script>
 <script src="js/todo.js"></script>
 <script src="js/weather.js"></script>
 </html>

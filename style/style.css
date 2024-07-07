@@ -1,8 +1,66 @@
+* {
+    font-family: "Calibri Light";
+}
+
 .hidden {
     display: none;
 }
 
-#background img {
-    width: 300px;
-    height: 200px;
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
+
+#weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather span {
+    padding: 10px;
+    font-size: 2vw;
+}
+
+#todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+#wrapper{
+    flex: 1;
+}
+
+footer {
+    margin: 10px;
+    text-align: center;
 }

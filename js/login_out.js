@@ -6,7 +6,7 @@ const USERNAME_KEY = 'username';
 const loginForm = document.getElementById('login-form');
 const loginInput = loginForm.querySelector('input');
 const helloUser = document.querySelector('#hello-user');
-const helloUserString = helloUser.querySelector('h1');
+const helloUserString = helloUser.querySelector('h4');
 
 // 함수
 function paintGreetings() {
